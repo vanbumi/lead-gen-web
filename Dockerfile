@@ -17,9 +17,8 @@ RUN apt-get update && apt-get install -y \
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy semua file app
+# Copy semua file app (tanpa .env)
 COPY app/ ./app/
-COPY .env .
 
 # Expose port
 EXPOSE 7860
