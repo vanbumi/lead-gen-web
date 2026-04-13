@@ -1,0 +1,23 @@
+name: Sync to Hugging Face hub
+on:
+  push:
+    branches: [main]
+  # Memungkinkan sinkronisasi manual dari tab Actions di GitHub
+  workflow_dispatch:
+
+jobs:
+  sync-to-hub:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          lfs: true
+
+      - name: Push to hub
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          # Ganti USERNAME dengan username Hugging Face kamu
+          # Ganti SPACE_NAME dengan nama Space yang kamu buat
+          git push --force https://USERNAME:$HF_TOKEN@huggingface.co/spaces/USERNAME/SPACE_NAME main

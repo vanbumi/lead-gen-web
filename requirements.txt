@@ -5,3 +5,5 @@ python-dotenv
 groq
 openpyxl
 plotly
+selenium
+webdriver-manager
