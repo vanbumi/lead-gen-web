@@ -32,7 +32,7 @@ def scrape_maps_selenium(keyword, limit=10):
         time.sleep(5)
         
         # Scroll
-        for i in range(6):
+        for i in range(10):
             driver.execute_script("window.scrollBy(0, 3000)")
             time.sleep(2)
         

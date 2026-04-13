@@ -174,7 +174,7 @@ hotel di surabaya
                         leads = scrape_maps(keyword, limit=limit, progress_callback=update_progress)
                         
                     # Tambahkan debug info
-                    st.info(f"Debug: Raw result type = {type(leads)}, length = {len(leads) if leads else 0}")
+                    # st.info(f"Debug: Raw result type = {type(leads)}, length = {len(leads) if leads else 0}")
                 except Exception as e:
                     st.error(f"Scraping error: {e}")
                     leads = []
