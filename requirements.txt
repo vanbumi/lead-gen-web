@@ -1,0 +1,7 @@
+streamlit
+playwright
+pandas
+python-dotenv
+groq
+openpyxl
+plotly
