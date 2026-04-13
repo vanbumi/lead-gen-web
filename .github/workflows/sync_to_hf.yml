@@ -20,4 +20,4 @@ jobs:
         run: |
           # Ganti USERNAME dengan username Hugging Face kamu
           # Ganti SPACE_NAME dengan nama Space yang kamu buat
-          git push --force https://USERNAME:$HF_TOKEN@huggingface.co/spaces/USERNAME/SPACE_NAME main
+          git push --force https://Vanbumi:$HF_TOKEN@huggingface.co/spaces/Vanbumi/lead-gen-pro main
